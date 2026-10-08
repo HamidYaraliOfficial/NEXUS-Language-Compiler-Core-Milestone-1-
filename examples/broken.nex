@@ -1,0 +1,24 @@
+// This file has multiple, unrelated errors on purpose, to show that
+// `nexus check` collects and reports ALL of them in one pass instead of
+// stopping at the first problem.
+
+struct Point {
+    x: int,
+    y: int,
+}
+
+fn add(a: int, b: int) -> int {
+    return a + b;
+}
+
+fn broken_return() -> int {
+    let x = 1;
+    // missing `return` on this path -> E0300
+}
+
+fn main() -> unit {
+    let p = Point { x: 1, z: 2 };   // unknown field `z`, missing field `y`
+    let n = add(1, "two");          // wrong argument type
+    let m = undefined_variable + 1; // undefined variable
+    print(m);
+}

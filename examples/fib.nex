@@ -1,0 +1,28 @@
+// Recursive and iterative Fibonacci, plus basic loop constructs.
+
+fn fib_recursive(n: int) -> int {
+    if n < 2 {
+        return n;
+    }
+    return fib_recursive(n - 1) + fib_recursive(n - 2);
+}
+
+fn fib_iterative(n: int) -> int {
+    let mut a = 0;
+    let mut b = 1;
+    let mut i = 0;
+    while i < n {
+        let next = a + b;
+        a = b;
+        b = next;
+        i = i + 1;
+    }
+    return a;
+}
+
+fn main() -> unit {
+    for i in 0..10 {
+        print(fib_recursive(i));
+    }
+    print(fib_iterative(20));
+}

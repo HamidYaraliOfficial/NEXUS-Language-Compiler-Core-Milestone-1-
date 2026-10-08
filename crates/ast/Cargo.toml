@@ -1,0 +1,11 @@
+[package]
+name = "nexus-ast"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+nexus-diagnostics = { path = "../diagnostics" }
+serde = { version = "1", features = ["derive"], optional = true }
+
+[features]
+serde = ["dep:serde"]

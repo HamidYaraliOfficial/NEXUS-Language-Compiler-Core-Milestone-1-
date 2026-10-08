@@ -1,0 +1,6 @@
+[package]
+name = "nexus-diagnostics"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]

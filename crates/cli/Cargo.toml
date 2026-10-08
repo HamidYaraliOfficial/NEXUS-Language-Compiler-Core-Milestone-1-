@@ -1,0 +1,16 @@
+[package]
+name = "nexus-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "nexus"
+path = "src/main.rs"
+
+[dependencies]
+nexus-diagnostics = { path = "../diagnostics" }
+nexus-lexer = { path = "../lexer" }
+nexus-ast = { path = "../ast" }
+nexus-parser = { path = "../parser" }
+nexus-typeck = { path = "../typeck" }
+nexus-interpreter = { path = "../interpreter" }

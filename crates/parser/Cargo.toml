@@ -1,0 +1,9 @@
+[package]
+name = "nexus-parser"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+nexus-diagnostics = { path = "../diagnostics" }
+nexus-lexer = { path = "../lexer" }
+nexus-ast = { path = "../ast" }

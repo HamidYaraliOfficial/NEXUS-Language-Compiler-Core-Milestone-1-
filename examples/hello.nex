@@ -1,0 +1,4 @@
+// The classic first program.
+fn main() -> unit {
+    print("Hello, NEXUS!");
+}

@@ -1,0 +1,21 @@
+// Run with: nexus test examples/tests_demo.nex
+
+fn add(a: int, b: int) -> int {
+    return a + b;
+}
+
+fn test_add_positive() -> unit {
+    assert(add(2, 3) == 5, "2 + 3 should be 5");
+}
+
+fn test_add_negative() -> unit {
+    assert(add(-2, -3) == -5, "-2 + -3 should be -5");
+}
+
+fn test_this_one_fails_on_purpose() -> unit {
+    assert(add(2, 2) == 5, "intentionally wrong, to show a FAILED test");
+}
+
+fn main() -> unit {
+    print("run me with `nexus test`, not `nexus run`");
+}

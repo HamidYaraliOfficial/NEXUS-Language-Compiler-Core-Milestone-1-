@@ -1,0 +1,12 @@
+[package]
+name = "nexus-interpreter"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+nexus-diagnostics = { path = "../diagnostics" }
+nexus-ast = { path = "../ast" }
+
+[dev-dependencies]
+nexus-parser = { path = "../parser" }
+nexus-typeck = { path = "../typeck" }
