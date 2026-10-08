@@ -136,7 +136,7 @@ can be built on top of next, one genuinely working piece at a time.
 
 ## 7. License
 
-MIT.
+Apache .
 
 ---
 
@@ -234,7 +234,7 @@ Mock/Fake/Placeholder» در تضاد است. این فاز، اولین لای�
 
 ### ۷. مجوز
 
-MIT.
+Apache .
 
 ---
 
@@ -329,4 +329,4 @@ IDE(含集成调试器与编译器浏览器)、格式化工具/静态检查工�
 
 ### 7. 许可证
 
-MIT。
+Apache 。
